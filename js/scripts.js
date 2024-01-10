@@ -20,8 +20,8 @@ createApp({
             axios
             .get('https://flynn.boolean.careers/exercises/api/random/mail')   // Tramite la proprietà .get richiamo l'API
             .then(res => res.data)                                            // Tramite la proprietà .then chiedo alla funzione di estrapolare la risposta e pusharla dentro l'array delle mail 
-            let newRandomEmail = data.response;                               // Posso Concatenare più volte la proprietà .then 
-            .then((data) => {                                                 
+            .then((data) => {                                                 // Posso concatenare più volte la proprietà .then        
+                let newRandomEmail = data.response;
                 this.myRandomEmail.push(newRandomEmail);
 
                 console.log('new RandomEmail: ', newRandomEmail);
