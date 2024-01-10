@@ -5,7 +5,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            message: 'Template HTML CSS Vue',
+            message: 'Vue Email List',
         };
     }
   // Monto l'istanza di Vue in pagina
