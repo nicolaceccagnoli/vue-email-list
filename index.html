@@ -15,11 +15,13 @@
                 {{ message }}
             </h1>
 
-            <ul v-if="myRandomEmail.length == 10">
-                <li v-for="(elem, i) in myRandomEmail">
-                    {{ elem }}
-                </li>
-            </ul>
+            <Transition>
+                <ul v-if="myRandomEmail.length === nMail">
+                    <li v-for="(elem, i) in myRandomEmail">
+                        {{ elem }}
+                    </li>
+                </ul>
+            </Transition>
 
         </div>
 

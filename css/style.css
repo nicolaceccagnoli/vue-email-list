@@ -10,3 +10,13 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 3s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
